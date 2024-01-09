@@ -44,6 +44,7 @@ header .navbar a {
     text-decoration: none;
     color: #FFF;
     transition: all 1s;
+    border-bottom: 1px solid #27AE60;
 }
 
 header .navbar a:hover {
@@ -91,5 +92,80 @@ header .navbar a:hover {
 
     header .navbar {
         gap: 2.5rem;
+    }
+}
+
+/* ******************************* */
+/* ************ Hero ************* */
+/* ******************************* */
+
+#hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#hero img {
+    border-radius: 100%;
+    max-width: 60%;
+}
+
+#hero .hero-about {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#hero .hero-about h2 {
+    font-size: 1.5rem;
+}
+
+#hero .hero-about h3.subtitle {
+    color: #828282;
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+#hero .hero-about .hero-button {
+    margin-top: 1.5rem;
+}
+
+#hero .hero-about .hero-button .download-button {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #27AE60;
+    padding: 6px 13px 6px 13px;
+    font-size: 0.8rem;
+    border: 1px solid #27AE60;
+}
+
+#hero .hero-about .hero-button .learn-button {
+    text-decoration: none;
+    color: #FFF;
+    padding: 6px 17px 6px 17px;
+    font-size: 0.8rem;
+    border: 1px solid #FFF;
+    margin-left: 0.3rem;
+}
+
+@media (min-width: 640px) {
+    #hero .hero-about h2 {
+        font-size: 2rem;
+    }
+
+    #hero .hero-about h3.subtitle {
+        font-size: 1rem;
+    }
+
+    #hero .hero-about .hero-button .download-button {
+        padding: 6px 13px 6px 13px;
+        font-size: 1rem;
+    }
+
+    #hero .hero-about .hero-button .learn-button {
+        padding: 6px 17px 6px 17px;
+        font-size: 1rem;
+        margin-left: 0.5rem;
     }
 }
