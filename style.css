@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: DM sans;
+    color: #FFF;
+    background-color: #171717;
+}
+
+.container {
+    max-width: 80rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
+}
+
+/* ******************************* */
+/* *********** Header ************ */
+/* ******************************* */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.75rem;
+}
+
+header .navbar {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: #27AE60;
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all 1s;
+}
+
+header .navbar a:hover {
+    color: #27AE60;
+    transition: all 1s;
+
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .navbar {
+        display: flex;
+        gap: 1.25rem;
+        margin-top: 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .navbar a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .navbar {
+        gap: 1.8rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    header .navbar a {
+        font-size: 1.3rem;
+    }
+
+    header .navbar {
+        gap: 2.5rem;
+    }
+}
