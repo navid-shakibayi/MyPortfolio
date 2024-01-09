@@ -112,6 +112,7 @@ header .navbar a:hover {
     max-width: 60%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    border: 8px solid rgba(46, 45, 45, 0.2);
 }
 
 #hero .hero-about {
@@ -183,6 +184,7 @@ header .navbar a:hover {
     #hero img {
         border-radius: 100%;
         max-width: 50%;
+        border: 12px solid rgba(46, 45, 45, 0.2);
     }
 
     #hero .hero-about {
@@ -192,6 +194,12 @@ header .navbar a:hover {
 }
 
 @media (min-width: 1280px) {
+    #hero img {
+        border-radius: 100%;
+        max-width: 50%;
+        border: 15px solid rgba(46, 45, 45, 0.2);
+    }
+    
     #hero .hero-about h2 {
         font-size: 3.5rem;
     }
