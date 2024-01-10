@@ -193,6 +193,27 @@ header .navbar a:hover {
     }
 }
 
+@media (min-width: 1024px) {
+    #hero .hero-about h2 {
+        font-size: 3rem;
+    }
+    
+    #hero .hero-about h3.subtitle {
+        font-size: 1rem;
+    }
+    
+    #hero .hero-about .hero-button .download-button {
+        padding: 6px 18px 6px 18px;
+        font-size: 1rem;
+    }
+    
+    #hero .hero-about .hero-button .learn-button {
+        padding: 6px 22px 6px 22px;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+}
+
 @media (min-width: 1280px) {
     #hero img {
         border-radius: 100%;
@@ -218,4 +239,91 @@ header .navbar a:hover {
         font-size: 1.2rem;
         margin-left: 1.5rem;
     }
+}
+
+/* ******************************* */
+/* ************ About ************ */
+/* ******************************* */
+
+#about .about-info-container {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#about .about-info-container h2.about-title {
+    font-size: 2rem;
+    border-bottom: 1px solid #27AE60;
+    display:inline;
+}
+
+#about .about-info-container h2.about-title span.hashtag {
+    color: #27ae5f5d;
+}
+
+#about .about-info-container p.about-text {
+    margin-top: 1rem;
+    font-weight: 300;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    #about .about-info-container p.about-text {
+        line-height: 1.5;
+    }
+
+    #about .about-info-container p.about-text {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #about .about-info-container h2.about-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    #about .about-info-container h2.about-title {
+        font-size: 3rem;
+    }
+}
+
+#ido .ido-container {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#ido .ido-container .card-container {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#ido .ido-container h2.ido-title {
+    font-size: 2rem;
+    border-bottom: 1px solid #27AE60;
+    display:inline;
+}
+
+#ido .ido-container h2.ido-title span.hashtag {
+    color: #27ae5f5d;
+}
+
+#ido .ido-container .card-box {
+    
+    background-color: #212121;
+    text-align: start;
+    padding-inline: 50px;
+    padding-block: 36px;
+}
+
+#ido .ido-container .card-box h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #535353;
 }
