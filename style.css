@@ -346,4 +346,88 @@ header .navbar a:hover {
     #ido .ido-container h2.ido-title {
         font-size: 2.5rem;
     }
+
+    #ido .ido-container .card-container {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1280px) {
+    #ido .ido-container h2.ido-title {
+        font-size: 3rem;
+    }
+}
+
+/* ******************************* */
+/* ************ Skils ************ */
+/* ******************************* */
+#skills {
+    padding-top: 4rem;
+    text-align: center;
+}
+
+#skills h2.skills-title {
+    font-size: 2rem;
+    border-bottom: 1px solid #27AE60;
+    display:inline;
+}
+
+#skills h2.skills-title span.hashtag {
+    color: #27ae5f5d;
+}
+
+#skills .skills-container {
+    display: grid;
+    background-color: #212121;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#skills .skills-container .counter-box {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#skills .skills-container .number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4F4F4F;
+}
+
+#skills .skills-container .code-lang {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #27AE60;
+}
+
+@media (min-width: 640px) {
+    #skills .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    #skills .skills-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #skills h2.skills-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    #skills h2.skills-title {
+        font-size: 3rem;
+    }
+
+    #skills .skills-container .number {
+        font-size: 4.5rem;
+    }
+
+    #skills .skills-container .code-lang {
+        font-size: 1.5rem;
+    }
 }
