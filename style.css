@@ -315,15 +315,35 @@ header .navbar a:hover {
 }
 
 #ido .ido-container .card-box {
-    
     background-color: #212121;
     text-align: start;
     padding-inline: 50px;
     padding-block: 36px;
+    width: 100%;
 }
 
 #ido .ido-container .card-box h2 {
     margin-top: 1rem;
     font-size: 2rem;
     color: #535353;
+}
+
+@media (min-width: 768px) {
+    #ido .ido-container .card-box {
+        width: fit-content;
+    }
+
+    #ido .ido-container .card-box:last-child {
+        width: 620px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #ido .ido-container .card-box:last-child {
+        width: fit-content;
+    }
+
+    #ido .ido-container h2.ido-title {
+        font-size: 2.5rem;
+    }
 }
